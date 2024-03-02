@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario3</title>
+    <link rel="stylesheet" href="formulario3.css">
+</head>
+
+<body>
+    <div class="orden">
+        <h1>REGISTRARSE</h1>
+        <input type="text" id="name" placeholder="Nombres" />
+        <input type="text" id="apellidos" placeholder="apellidos" />
+        <label for="genero">Masculino
+            <input type="radio" name="genero" value="masculino" id="m">
+        </label>
+        <label for="genero">Femenino
+            <input type="radio" name="genero" value="Femenino" id="f">
+        </label>
+        <input type="number" id="telefono" placeholder="Numero de telefono" />
+        <select name="tipo de documento" id="lista">
+            <option value="CC">cedula de ciudadania</option>
+            <option value="CE">cedula de extranjeria</option>
+        </select>
+        <input type="number" id="documento" placeholder="numero de documento" />
+        <input type="text" id="correo" placeholder="correo electronico" />
+        <input type="date" id="fecha" placeholder="fecha de nacimiento" />
+        <button onclick="enviar()">ENVIAR</button>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        Nombres
+                    </th>
+                    <th>
+                        apellidos
+                    </th>
+                    <th>
+                        genero
+                    </th>
+                    <th>
+                        telefono
+                    </th>
+                    <th>
+                        tipo documento
+                    </th>
+
+                    <th>
+                        numero documento
+                    </th>
+
+                    <th>
+                        correo electronico
+                    </th>
+                    <th>
+                        fecha nacimiento
+                    </th>
+
+
+                </tr>
+            </thead>
+            <tbody id="fijo">
+
+            </tbody>
+        </table>
+    </div>
+</body>
+<script>
+
+let lista=[]
+
+
+/*     function enviar() {
+        let g = ""
+        console.log(document.getElementById("lista").value);
+        if (document.getElementById("m").checked) {
+            console.log("Masculino");
+            g = "Masculino"
+        } else {
+            console.log("Femenino");
+            g = "Femenino"
+        }
+        let datos = {}
+        datos = { genero: g, tipodoc: document.getElementById("lista").value }
+        console.log(datos);
+        let data = []
+        data.push(datos)
+        console.log(data);
+
+    } */
+
+function enviar() {
+    lista.push(
+        {nombre:document.getElementById("name").value,
+        apellidos:document.getElementById("apellidos").value,
+        genero:document.getElementById("m").checked?"Masculino":document.getElementById("f").checked?"femenino":"",
+        telefono:document.getElementById("telefono").value,
+        tipo:document.getElementById("lista").value,
+        documento:document.getElementById("documento").value,
+        correo:document.getElementById("correo").value,
+        fecha:document.getElementById("fecha").value,
+        
+    }
+
+    )
+    console.log(lista);
+
+    document.getElementById("fijo").textContent=""
+
+
+    pintar()
+}
+
+    function pintar() {
+        lista.forEach((item, i) =>{
+            let fila = document.createElement("tr")
+
+            let celda = document.createElement("td")
+            celda.textContent=item.nombre
+            fila.appendChild(celda)
+
+            let celda1 = document.createElement("td")
+            celda1.textContent=item.apellidos
+            fila.appendChild(celda1)
+
+            let celda2 = document.createElement("td")
+            celda2.textContent=item.genero
+            fila.appendChild(celda2)
+
+            let celda3 = document.createElement("td")
+            celda3.textContent=item.genero
+            fila.appendChild(celda3)
+
+            let celda4 = document.createElement("td")
+            celda4.textContent=item.genero
+            fila.appendChild(celda4)
+
+            let celda5 = document.createElement("td")
+            celda5.textContent=item.genero
+            fila.appendChild(celda5)
+
+            let celda6 = document.createElement("td")
+            celda5.textContent=item.genero
+            fila.appendChild(celda6)
+
+            let celda7 = document.createElement("td")
+            celda7.textContent=item.genero
+            fila.appendChild(celda7)
+
+
+
+
+            document.getElementById("fijo").appendChild(fila)
+
+        })
+
+    }
+
+</script>
+
+</html>

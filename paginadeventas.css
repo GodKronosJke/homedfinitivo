@@ -1,0 +1,429 @@
+/* * {
+	
+	margin: 0;
+}
+
+body {
+    background: #d4ddf7;
+	color: white;
+	font-family: 'Roboto', sans-serif;
+
+}
+
+
+
+.container{
+
+	text-align: right;
+padding: 40px;
+gap: 60px;
+  border: bottom 20px; ;
+}
+
+
+.container1{
+padding: 40px;
+  color: rgb(23, 23, 25);
+}
+.container2{
+ 
+	padding: 0%;
+	text-align: right;
+	margin: 90px;
+	margin-bottom: 10%;
+}
+
+
+.container3{
+text-align: left
+
+}
+
+.textos{
+	display: grid;
+		grid-template-rows: 1fr auto;
+		font-size: 10%;
+}
+p{
+    font-size: 21px;
+    margin: 15px 20px;
+}
+
+.card{
+	width:30% ;
+	display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+	font-size: 40% ;
+	margin: 5%;
+}
+
+.container4{
+	display:grid
+	justify-content
+} */
+
+
+
+
+
+
+/* https://webdesign.tutsplus.com/es/experimentos-de-css-con-un-formulario-de-busqueda-y-su-boton--cms-22069t
+https://onecompiler.com/html/3zrjk28pq */
+
+/* ........................
+........................ */
+
+
+* {
+	
+	margin: 0;
+}
+
+body {
+    background: #d4ddf7;
+	color: white;
+	font-family: 'Roboto', sans-serif;
+
+}
+
+
+
+.container{
+
+	text-align: right;
+	padding-right: 5%;
+	margin:3%;
+   
+}
+
+.btn-0,
+.btn-1,
+.btn-2,
+.btn-3,
+.btn-4,
+.btn-5,
+.btn-6,
+.btn-7 {
+  margin-right: 10px;
+  border-top: 1px solid rgb(110, 108, 108); 
+  border-radius: 10px;
+  box-shadow: #808080;
+  
+}
+.container1{
+padding: 40px;
+  color: rgb(23, 23, 25);
+}
+
+a {
+	display: inline-block;
+	padding: 10px;
+	margin: 5px;
+	border: 1px solid black;
+	text-decoration: none;
+  }
+  
+  .btn-8 {
+	background-color: #f1f1f1;
+	border-radius: 10px;
+  }
+  
+  .btn-9 {
+	background-color: #d3d3d3;
+	border-radius: 10px;
+  }
+  
+  .btn-10 {
+	background-color: #c0c0c0;
+	border-radius: 10px;
+  }
+  
+  .btn-11 {
+	background-color: #a9a9a9;
+	border-radius: 10px;
+  }
+  
+  .btn-12 {
+	background-color: #808080;
+	border-radius: 10px;
+  }
+  
+  .btn-13 {
+	background-color: #696969;
+	border-radius: 10px;
+  }
+  
+  .btn-14 {
+	background-color: #000000;
+	border-radius: 10px;
+	color: white;
+  }
+.container2{
+ 
+	padding: 0%;
+	text-align: right;
+	margin: 90px;
+	margin-bottom: 10%;
+
+}
+
+
+.container3{
+text-align: left
+
+}
+
+.card-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 10px;
+}
+
+.card {
+    position: relative;
+    height: auto;
+    background-color: #F5F5F5;
+    padding: 15px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+	height: auto;
+}
+
+.card .textos h3 {
+    font-size: 18px;
+    color: #333;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.card .textos p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #666;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 5em;
+    overflow: hidden;
+}
+
+.card .textos:last-child {
+    margin-top: auto;
+}
+
+/* .card {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 10px;
+	
+  }
+  
+  .card img {
+	width: 100%;
+	height: auto;
+  }
+  
+  .card .textos {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 20%;
+  }
+  
+  .card h3,
+  .card p {
+	text-align: center;
+
+  } */
+
+  .boxr {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.boxr .container4,
+.boxr .container5,
+.boxr .container6,
+.boxr .container7 {
+    position: relative;
+    width: 33%;
+    background-color: #F5F5F5;
+    padding: 15px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.boxr .container4 img,
+.boxr .container5 img,
+.boxr .container6 img,
+.boxr .container7 img {
+    width: 100%;
+    height: auto;
+}
+
+.boxr .container4 p,
+.boxr .container5 p,
+.boxr .container6 p,
+.boxr .container7 p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #666;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 5em;
+    overflow: hidden;
+}
+
+.boxr .container4 h3,
+.boxr .container5 h3,
+.boxr .container6 h3,
+.boxr .container7 h3 {
+    font-size: 18px;
+    color: #333;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.boxr .container4 button,
+.boxr .container5 button,
+.boxr .container6 button,
+.boxr .container7 button {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.boxr .container4 button:hover,
+.boxr .container5 button:hover,
+.boxr .container6 button:hover,
+.boxr .container7 button:hover {
+    background-color: #3e8e41;
+}
+
+.boxr {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.boxr .container8,
+.boxr .container9,
+.boxr .container10,
+.boxr .container11 {
+    position: relative;
+    width: 33%;
+    background-color: #F5F5F5;
+    padding: 15px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.boxr .container8 img,
+.boxr .container9 img,
+.boxr .container10 img,
+.boxr .container11 img {
+    width: 100%;
+    height: auto;
+}
+
+.boxr .container8 p,
+.boxr .container9 p,
+.boxr .container10 p,
+.boxr .container11 p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #666;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 5em;
+    overflow: hidden;
+}
+
+.boxr .container8 h3,
+.boxr .container9 h3,
+.boxr .container10 h3,
+.boxr .container11 h3 {
+    font-size: 18px;
+    color: #333;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.boxr .container8 button,
+.boxr .container9 button,
+.boxr .container10 button,
+.boxr .container11 button {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.boxr .container8 button:hover,
+.boxr .container9 button:hover,
+.boxr .container10 button:hover,
+.boxr .container11 button:hover {
+    background-color: #3e8e41;
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 50px 0;
+}
+
+.footer div {
+    width: 22%;
+    margin-bottom: 30px;
+}
+
+.footer div h3 {
+    font-size: 18px;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.footer div p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #666;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 767px) {
+    .footer div {
+        width: 31%;
+    }
+}
+
+@media (max-width: 575px) {
+    .footer div {
+        width: 100%;
+    }
+}

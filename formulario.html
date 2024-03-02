@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <link rel="stylesheet" href="formulario.css">
+</head>
+
+<div class="form">
+    <p>Nombre: <input type="text" name="nombre"  id="nom" value="jhon"></p>
+</div>
+
+<!------->
+
+<div class="form">
+    <p>Apellido:<input type="text" name="apellido" id="apell"></p>
+</div>
+
+<!------->
+
+<div class="form">
+<p>
+
+Genero <br>
+<input type="radio" name="masculino"  id="m" value="masculino"> Masculino<br> 
+
+<input type="radio" name="femenino" id="f" value="femenino"> Femenino<br> 
+
+</p>
+
+</div>
+
+<!------->
+<div class="form">
+    <p>Telefono: <input type="text" id="telf" name="telefono" ></p>
+</div>
+
+
+<!------->
+<div class="form">
+
+    <p>
+
+Tipo de documento
+
+<select name="documento" id="doc" >
+
+<option>Cedula</option>
+
+<option>Cedula Extranjera</option>
+
+<option >Tarjeta de identidad</option>
+</select>
+
+    </p>
+   
+
+</div>
+
+<!------->
+
+<div class="form">
+    <p>Numero de documento <input type="text" id="numdc"name="numero_de_documento" ></p>
+</div>
+
+
+<!------->
+<div class="form">
+    <p>
+
+        <input type="submit" value="Enviar datos">
+    
+        <input type="reset" value="Restaurar formulario">
+    
+      </p>
+</div>
+
+
+<!------->
+
+<script>
+    function enviar() {
+        let g = ""
+        console.log(document.getElementById("lista").value);
+        if (document.getElementById("m").checked){
+            console.log("Masculino");
+            g="Masculino"
+        }else{
+            console.log("Femenino");
+            g="Femenino"
+        }
+        let datos = {}
+        datos = {genero:g, tipodoc: document.getElementById("lista").value}
+        console.log(datos);
+        let data = []
+        data.push(datos)
+        console.log(data);
+    }
+
+    
+
+
+    
+        
+    
+
+
+
+
+</script>
+<!------->
+
+<body>
+    
+</body>
+</html>
